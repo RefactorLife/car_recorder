@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="5"
+        android:background="@drawable/touchup_bg"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/recorder_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="行车影像记录" />
+
+        <CheckBox
+            android:id="@+id/light_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开灯提醒" />
+
+        <CheckBox
+            android:id="@+id/light_checkbox_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="文本提示" />
+
+        <CheckBox
+            android:id="@+id/light_checkbox_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="语音提示" />
+
+        <CheckBox
+            android:id="@+id/overspeed_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="超速提醒" />
+
+        <CheckBox
+            android:id="@+id/overspeed_checkbox_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="文本提示" />
+
+        <CheckBox
+            android:id="@+id/overspeed_checkbox_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="语音提示" />
+
+        <ListView
+            android:id="@+id/id_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:cacheColorHint="#ffffff" />
+        <ImageView
+            android:id="@+id/confirm_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@drawable/start_record_btn_off" />
+
+    </LinearLayout>
+
+</LinearLayout>
